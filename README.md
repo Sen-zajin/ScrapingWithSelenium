@@ -1,4 +1,35 @@
-# ScrapingWithSelenium
+i would just like a hand to understand if:
+
+i get a complete list of data; there are 500 pages with 20 candidates
+
+if i get the data of the page that opens on each of the candidates.
+
+if the authenticated token refers to my friend, who is an employee of the company, and if there is a way a py library to avoid this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import json
 import time
 import random
@@ -11,7 +42,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Impostazioni generali
 base_url = "https://api-2.performahrm.com/api/curriculum_updates"
 items_per_page = 20
 all_candidates = []  # Lista per memorizzare tutti i candidati
