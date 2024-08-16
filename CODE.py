@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-base_url = "https://api-2.performahrm.com/api/curriculum_updates"
+base_url = "https://api-2.pmahrm.com/api/curriculum_updates"
 items_per_page = 20
 all_candidates = []  # Lista per memorizzare tutti i candidati
 retry_delay = 10
