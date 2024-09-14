@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-base_url = "https://api-2.pmahrm.com/api/curriculum_updates"
+base_url = "
 items_per_page = 20
 all_candidates = []  # Lista per memorizzare tutti i candidati
 retry_delay = 10
@@ -38,7 +38,7 @@ def simulate_human_interaction(driver, curriculum_id, headers):
             'itemsPerPage': items_per_page,
             'page': page,
             'order[id]': 'desc',
-            'curriculum': f'/api/curricula/{curriculum_id}',
+            'curriculum': f'{curriculum_id}',
             'isManual': ''
         }
 
@@ -81,7 +81,7 @@ def download_data_with_requests(params, headers):
 # Funzione principale
 def main():
     session = requests.session()
-    token_url = "https://api-2.performahrm.com"  # URL per ottenere il token (da aggiornare)
+    token_url = ""  # URL per ottenere il token (da aggiornare)
     headers = {
         'Accept-Encoding': 'gzip',
         'Accept': 'application/json',
